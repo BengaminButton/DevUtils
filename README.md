@@ -63,9 +63,6 @@ devutils-gui
 # Установка dev-зависимостей
 pip install -e .[dev]
 
-# Запуск тестов
-pytest tests/
-
 # Сборка пакета
 python -m build
 
