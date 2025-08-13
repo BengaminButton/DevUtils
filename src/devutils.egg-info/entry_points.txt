@@ -1,0 +1,3 @@
+[console_scripts]
+devutils = devutils.cli:app
+devutils-gui = devutils.gui.main:main

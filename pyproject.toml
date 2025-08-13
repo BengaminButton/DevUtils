@@ -1,0 +1,34 @@
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "devutils"
+version = "0.1.0"
+description = "DevUtils: QR generator, website check, Base64 tools, duplicate finder — CLI and GUI"
+authors = [{ name = "DevUtils", email = "devutils@example.com" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "rich>=13",
+    "typer>=0.9",
+    "qrcode[pil]>=7.4",
+    "requests>=2.31",
+    "Pillow>=10",
+    "PySide6>=6.6",
+]
+
+[project.urls]
+Homepage = "https://github.com/BengaminButton"
+
+[project.scripts]
+devutils = "devutils.cli:app"
+devutils-gui = "devutils.gui.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}

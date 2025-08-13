@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/devutils/__init__.py
+src/devutils/cli.py
+src/devutils.egg-info/PKG-INFO
+src/devutils.egg-info/SOURCES.txt
+src/devutils.egg-info/dependency_links.txt
+src/devutils.egg-info/entry_points.txt
+src/devutils.egg-info/requires.txt
+src/devutils.egg-info/top_level.txt
+src/devutils/gui/__init__.py
+src/devutils/gui/main.py
+src/devutils/modules/base64util.py
+src/devutils/modules/duplicates.py
+src/devutils/modules/ping.py
+src/devutils/modules/qr.py

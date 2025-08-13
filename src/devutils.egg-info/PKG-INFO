@@ -1,0 +1,38 @@
+Metadata-Version: 2.4
+Name: devutils
+Version: 0.1.0
+Summary: DevUtils: QR generator, website check, Base64 tools, duplicate finder — CLI and GUI
+Author-email: DevUtils <devutils@example.com>
+License: MIT
+Project-URL: Homepage, https://github.com/BengaminButton
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rich>=13
+Requires-Dist: typer>=0.9
+Requires-Dist: qrcode[pil]>=7.4
+Requires-Dist: requests>=2.31
+Requires-Dist: Pillow>=10
+Requires-Dist: PySide6>=6.6
+Dynamic: license-file
+
+
+# DevUtils
+
+Набор утилит: 
+- Генерация QR-кодов
+- Проверка доступности сайта (HTTP ping)
+- Конвертер Base64/Text
+- Поиск дубликатов файлов
+
+Есть CLI и GUI (PySide6). Цветной вывод, модульная архитектура.
+
+Запуск без установки:
+
+```
+python -m venv .venv
+source .venv/bin/activate
+pip install -e .
+devutils --help
+devutils-gui
+```
